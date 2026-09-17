@@ -1,0 +1,7 @@
+nummers = ["362732763727273", "293829839839", "392309330939"]
+namen = ["jan", "piet", "kapper korneel"]
+
+naam_gebr = input("geef naam: ")
+for index, naam in enumerate(namen):
+    if naam_gebr ==naam:
+        print(nummers[index])
