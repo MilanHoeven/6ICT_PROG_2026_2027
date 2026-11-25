@@ -6,4 +6,7 @@ taal_aandeel = {} # Zet lege dict klaar.
 for index, taal in enumerate(talen): # Overloop een van de lijsten.
     # Haal correcte element uit andere lijst op.
     # Voeg taal: aandeel toe aan dictionary.
-    pass
+    print(taal)
+    taal_aandeel[taal] = aandelen[index]
+
+print(taal_aandeel)

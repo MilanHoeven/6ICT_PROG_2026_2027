@@ -7,3 +7,7 @@ steden_temp = { # Sleutel is stad, waarde is temp
     "Luik": 23,
     "Namen": 24
 }
+
+Stad = input("Geef een stad: ")
+Temp = steden_temp.get(Stad, "???")
+print(f"Het is in deze stad {Temp}")

@@ -6,4 +6,14 @@ database = { # Sleutel = naam, waarde = wachtwoord
     "Korneel": "MdsSnz863*"
 }
 
+naam = input("Wie wilt inloggen: ")
 
+if naam not in database:
+    print(naam, "bestaat niet in de database.")
+else:
+    wachtwoord = input("Geef wachtwoord op van " + naam + ": ")
+
+    if wachtwoord == database[naam]:
+        print("Welkom", naam + "!")
+    else:
+        print("Wachtwoord incorrect.")

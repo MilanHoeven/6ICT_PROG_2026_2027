@@ -5,7 +5,7 @@ landen_feiten = {
         'bevolking': 67348000,
         'taal': 'Frans',
     },
-    'Belgi?': {
+    'België?': {
         'hoofdstad': 'Brussel',
         'bevolking': 11563000,
         'taal': ['Nederlands', 'Frans', 'Duits'],
@@ -15,3 +15,7 @@ landen_feiten = {
         'taal': 'Duits',
     }
 }
+
+for land, info in landen_feiten.items():
+    if "hoofdstad" in info:
+        print(f" {land} heeft de hoofdstad {info['info']}")

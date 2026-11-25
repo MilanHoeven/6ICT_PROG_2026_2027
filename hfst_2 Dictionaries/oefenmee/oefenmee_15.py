@@ -4,7 +4,7 @@ grootste_steden = {
         'Parijs': 2140526,
         'Marseille': 869815,
     },
-    'Belgi?': {
+    'België?': {
         'Brussel': 1209000,
         'Antwerpen': 523248,
     },
@@ -13,3 +13,13 @@ grootste_steden = {
         'Hamburg': 1841179,
     }
 }
+
+for land, steden in grootste_steden.items():
+    print(land, steden)
+    for stad, bevolking in steden.items():
+        print(stad,bevolking)
+
+for hoofd_sleutel, sub_dict in grootste_steden.items():
+    print(f"de subdict met sleutel {hoofd_sleutel} bestaat uit ...")
+    for sub_sleutel, waarde in sub_dict.items():
+        print(f"    - Sleutel {sub_sleutel} en waarde {waarde}")

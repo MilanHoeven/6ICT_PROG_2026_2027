@@ -4,3 +4,7 @@ laptop_info = [
     [6, "Huur30", "deployed", "deployed", [3, "LAPTOPS-ZONDERTOUCH"] ],
     [1, "Campus"]
 ]
+
+print(laptop_info[0])
+print(laptop_info[1][1])
+print(la)
